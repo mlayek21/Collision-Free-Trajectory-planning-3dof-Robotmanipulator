@@ -1,0 +1,11 @@
+a=-(1/6.5);
+c=44.33;
+y=linspace(0, 11, 50);
+x=(y-c)/a;
+scatter(x,y);
+xlim([150,300]);
+ylim([0,110]);
+hold on;
+y=linspace( 11, 25, 50);
+x= ones(length(y))*216.66;
+scatter(x,y);
