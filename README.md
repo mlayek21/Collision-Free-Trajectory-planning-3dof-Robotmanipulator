@@ -47,5 +47,24 @@ In practice, the C-space of a manipulator can be much more complex, with more di
 
 C-space analysis can be used to study the properties and limitations of a manipulator, such as its reachability, singularities, and collision avoidance
 
+### Bspline Curve:
+B-spline is a type of curve or surface that is defined by a set of control points and a degree. It is a piecewise polynomial curve that is used to approximate a set of data points or to define a smooth curve or surface through a set of design points.
 
+To understand B-splines, it is helpful to first understand the concept of a polynomial curve. A polynomial curve is a curve that is defined by a polynomial equation, which is an equation of the form:
+
+$y = a_0 + a_1x + a_2x^2 + a3x^3 + \cdots + a_nx^n$
+
+Where y is the dependent variable and x is the independent variable, and the coefficients a0, a1, a2, etc. are constants that determine the shape of the curve.
+
+- A B-spline curve is a piecewise polynomial curve that is defined by a set of control points and a degree. The curve passes through the control points, and the degree determines the smoothness of the curve.
+
+- A B-spline curve is constructed by first dividing the set of control points into a series of segments. Each segment is defined by a set of control points, and a polynomial curve is fit to each segment. The polynomial curves for each segment are then pieced together to form the final B-spline curve.
+
+- To understand how the polynomial curves are fit to the segments, we need to introduce the concept of basis functions. A basis function is a mathematical function that is used to define the shape of a curve or surface. For B-splines, the basis functions are polynomials of a particular degree.
+
+- The polynomial curve for each segment of a B-spline curve is defined as a linear combination of the basis functions for that segment. The coefficients of the basis functions are determined by the control points, and they can be calculated using a process called knot insertion.
+
+- Knot insertion is a method for determining the coefficients of the basis functions in a B-spline curve. It involves solving a system of linear equations, in which the control points are the unknowns and the basis functions are the knowns.
+
+- Once the coefficients of the basis functions have been determined, the polynomial curve for each segment can be calculated. The polynomial curves for all of the segments are then pieced together to form the final B-spline curve
 
