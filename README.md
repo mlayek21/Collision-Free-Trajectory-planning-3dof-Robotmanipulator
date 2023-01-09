@@ -79,7 +79,7 @@ Where x is the state of the system, u is the control input, and A and B are matr
 
 To control the system to follow a reference trajectory, we need to define a control law that determines the control input u based on the error between the reference trajectory and the actual trajectory. The control law can be represented by the following equation:
 
-$u = -K_pe - K_i\int(e) - K_d*\partial(e)
+$u = -K_pe - K_i\int(e) - K_d*d(e)
 
 Where e is the error between the reference trajectory and the actual trajectory, Kp is the proportional gain, Ki is the integral gain, and Kd is the derivative gain. The integral term represents the accumulated error over time, and the derivative term represents the rate of change of the error.
 
