@@ -68,3 +68,23 @@ Where y is the dependent variable and x is the independent variable, and the coe
 
 - Once the coefficients of the basis functions have been determined, the polynomial curve for each segment can be calculated. The polynomial curves for all of the segments are then pieced together to form the final B-spline curve
 
+### Controlller:
+A PID (proportional-integral-derivative) controller is a control algorithm that is commonly used in trajectory control systems. It is a type of feedback controller that uses the error between the desired trajectory and the actual trajectory to adjust the control signals that are sent to the system.
+
+To understand how a PID controller works, we can start by considering a simple linear system that is being controlled to follow a reference trajectory. The system can be represented by the following mathematical model:
+
+$x = Ax + Bu$
+
+Where x is the state of the system, u is the control input, and A and B are matrices that describe the dynamics of the system.
+
+To control the system to follow a reference trajectory, we need to define a control law that determines the control input u based on the error between the reference trajectory and the actual trajectory. The control law can be represented by the following equation:
+
+$u = -K_pe - K_i\int(e) - K_d*\diff(e)
+
+Where e is the error between the reference trajectory and the actual trajectory, Kp is the proportional gain, Ki is the integral gain, and Kd is the derivative gain. The integral term represents the accumulated error over time, and the derivative term represents the rate of change of the error.
+
+The gains Kp, Ki, and Kd are constants that are chosen to tune the performance of the controller. They determine the relative importance of the proportional, integral, and derivative terms, and they can be adjusted to achieve the desired performance.
+
+To use the PID controller to control the system to follow a reference trajectory, we can define the reference trajectory as the desired state x_desired, and we can use the error e = x_desired - x as the input to the controller. The control input u is then calculated using the control law, and it is applied to the system to adjust the system's behavior.
+
+The PID controller continuously
