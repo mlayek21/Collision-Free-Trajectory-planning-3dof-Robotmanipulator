@@ -83,8 +83,10 @@ $u = -K_pe - K_i\int_{}^{}(e) - K_d* \frac{\mathrm{d}}{\mathrm{d}t}(e),$
 
 Where e is the error between the reference trajectory and the actual trajectory, Kp is the proportional gain, Ki is the integral gain, and Kd is the derivative gain. The integral term represents the accumulated error over time, and the derivative term represents the rate of change of the error.
 
-The gains Kp, Ki, and Kd are constants that are chosen to tune the performance of the controller. They determine the relative importance of the proportional, integral, and derivative terms, and they can be adjusted to achieve the desired performance.
+- The gains Kp, Ki, and Kd are constants that are chosen to tune the performance of the controller. They determine the relative importance of the proportional, integral, and derivative terms, and they can be adjusted to achieve the desired performance.
 
-To use the PID controller to control the system to follow a reference trajectory, we can define the reference trajectory as the desired state x_desired, and we can use the error e = x_desired - x as the input to the controller. The control input u is then calculated using the control law, and it is applied to the system to adjust the system's behavior.
+- To use the PID controller to control the system to follow a reference trajectory, we can define the reference trajectory as the desired state x_desired, and we can use the error e = x_desired - x as the input to the controller. The control input u is then calculated using the control law, and it is applied to the system to adjust the system's behavior.
 
-The PID controller continuously
+```
+Author: Monojit Layek
+```
