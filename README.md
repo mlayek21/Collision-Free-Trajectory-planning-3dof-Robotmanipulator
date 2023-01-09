@@ -35,8 +35,9 @@ To understand the C-space of a robot manipulator, we can start by considering th
 
 For example, consider a simple 2DOF (degree of freedom) manipulator with two links and two revolute joints. The kinematic model of this manipulator can be represented by a set of forward kinematic equations, which define the position and orientation of the end effector in terms of the joint angles:
 
-$$x = l_1cos(q1) + l_2cos(\theta_1 + \theta_2)$$
-$$y = l_1sin(q1) + l_2sin(\theta_1 + \theta_2)$$
+$x = l_1cos(q1) + l_2cos(\theta_1 + \theta_2)$
+
+$y = l_1sin(q1) + l_2sin(\theta_1 + \theta_2)$
 
 Where x and y are the coordinates of the end effector, l1 and l2 are the lengths of the links, and q1 and q2 are the joint angles.
 
