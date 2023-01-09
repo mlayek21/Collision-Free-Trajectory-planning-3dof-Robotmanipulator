@@ -11,7 +11,7 @@ This project was completed as part of the ME850A course at the Department of Mec
 - Both collision-free trajectory planning and collision avoidance are important considerations in the design and operation of robotic manipulators, as they help to ensure the safety and reliability of the manipulator, and can also improve its performance and efficiency.
 
 ## Objective
--The objective of a project or task is the overall goal or purpose that it is intended to achieve. It is a statement of what is to be accomplished and why it is important. The objective should be clear, specific, and measurable, and it should provide a basis for evaluating the success or effectiveness of the project.
+- The objective of a project or task is the overall goal or purpose that it is intended to achieve. It is a statement of what is to be accomplished and why it is important. The objective should be clear, specific, and measurable, and it should provide a basis for evaluating the success or effectiveness of the project.
 
 - In the context of the project described in the previous answer, the objective was to design and implement a collision-free trajectory planning algorithm for a 3R robot manipulator. This means that the goal of the project was to create a method for finding a path for the manipulator to follow that avoids collisions with obstacles in the environment. The objective of this project was likely motivated by the importance of ensuring the safety and reliability of the manipulator, and by the need for efficient and accurate navigation in order to achieve the manipulator's desired goals.
 
@@ -26,5 +26,25 @@ In the context of the project described in the previous answer, the procedure fo
 - Implementation: Code or build the algorithm or method in a suitable programming language or software environment.
 - Testing: Evaluate the performance of the algorithm or method in simulation or real-world conditions, and make any necessary adjustments or improvements.
 - Deployment: Implement the algorithm or method in the manipulator's control system, and test it in real-world conditions to ensure that it is working correctly and efficiently.
+
+## Mathematically
+### Cspace:
+C-space, or configuration space, is a mathematical representation of the possible configurations or positions that a robot manipulator can assume. It is a high-dimensional space that represents the joint angles or positions of the manipulator's links, and it can be used to analyze the reachability, singularities, and constraints of the manipulator.
+
+To understand the C-space of a robot manipulator, we can start by considering the kinematic model of the manipulator. This model defines the relationship between the joint angles and the position and orientation of the manipulator's end effector (the point at which it can apply forces or perform tasks).
+
+For example, consider a simple 2DOF (degree of freedom) manipulator with two links and two revolute joints. The kinematic model of this manipulator can be represented by a set of forward kinematic equations, which define the position and orientation of the end effector in terms of the joint angles:
+
+$$x = l_1cos(q1) + l_2cos(\theta_1 + \theta_2)$$
+$$y = l_1sin(q1) + l_2sin(\theta_1 + \theta_2)$$
+
+Where x and y are the coordinates of the end effector, l1 and l2 are the lengths of the links, and q1 and q2 are the joint angles.
+
+The C-space of this manipulator can be represented as a two-dimensional surface in x-y space, with the joint angles q1 and q2 as the coordinates. Each point on this surface corresponds to a unique configuration or position of the manipulator.
+
+In practice, the C-space of a manipulator can be much more complex, with more dimensions and more complex kinematic models. However, the basic concept of using the joint angles as coordinates to represent the manipulator's possible configurations remains the same.
+
+C-space analysis can be used to study the properties and limitations of a manipulator, such as its reachability, singularities, and collision avoidance
+
 
 
